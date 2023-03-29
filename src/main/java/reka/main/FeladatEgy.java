@@ -3,8 +3,10 @@ package reka.main;
 import reka.model.Location;
 import reka.model.LocationGraph;
 import reka.model.Person;
+import reka.service.ShortestRouteCalculator;
 
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class FeladatEgy {
@@ -38,6 +40,8 @@ public class FeladatEgy {
         Person emilia= new Person (oktogon,borarosTer,1);
         Person reka= new Person(moriczZsigmondKorter,kalvinTer,1);
         List<Person> utazok=List.of(agnes,antal,harold,emilia,reka);
+        List<Location> agnesUtvaonal=
+                ShortestRouteCalculator.calculateShortestRoute(agnes.getStart(),agnes.getStop(),elsoTerkep);
 
     }
 }
