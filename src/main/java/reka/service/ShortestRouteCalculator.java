@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ShortestRouteCalculator {
-    public List<Location> calculateShortestRoute (Location start, Location stop, LocationGraph myMap) {
+    public static List<Location> calculateShortestRoute (Location start, Location stop, LocationGraph myMap) {
 
 
         List<Location> shortestRoute = new LinkedList<>();

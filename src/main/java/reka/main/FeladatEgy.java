@@ -2,6 +2,7 @@ package reka.main;
 
 import reka.model.Location;
 import reka.model.LocationGraph;
+import reka.model.Person;
 
 import java.util.Collections;
 import java.util.List;
@@ -31,6 +32,12 @@ public class FeladatEgy {
         helyekListaja.add(kalvinTer);
         LocationGraph elsoTerkep= new LocationGraph(helyekListaja);
         //szemelyek
+        Person agnes= new Person(oktogon,moriczZsigmondKorter ,1);
+        Person antal= new Person(nyugatiTer,kalvinTer ,1);
+        Person harold= new Person( borarosTer,nyugatiTer,1);
+        Person emilia= new Person (oktogon,borarosTer,1);
+        Person reka= new Person(moriczZsigmondKorter,kalvinTer,1);
+        List<Person> utazok=List.of(agnes,antal,harold,emilia,reka);
 
     }
 }
